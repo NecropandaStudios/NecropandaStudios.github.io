@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>Necropanda Studios</title>
+        <link rel="stylesheet" href="/style.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Kaushan+Script&family=Poppins&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <section id="banner">
+            <img src="/Assets/necropanda_logo.png" class="logo">
+            <div class="banner-text">
+                <h1>Necropanda Studios</h1>
+                <p>An indie development team</p>
+                <div class="banner-btn">
+                    <a href="#"><span></span>Find out more</a>
+                    <a href="#"><span></span>See our work</a>
+                </div>
+            </div> 
+        </section>
+
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Games</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menuBtn">
+        <img src="/Assets/menu.png" id="menu">
+    </div>
+
+    <!--About-->
+    <section id="About">
+        <div class="Title-Text">
+            <h2>Our Ideals</h2>
+            <h1>What Necropanda is about</h1>
+            <p>Whilst the name might seem odd, Necropanda actually came from one of our programmers and his 'Chronicles of the Necro Panda' comics he would write during bug fix sessions. The spirit of the Panda fighting back against its poacher. The idea of fighting back gave us not only the name of our team, but the idea of our first game as well.</p>
+            <img src="/Assets/Games/COA_logo1.png" alt="Corruption of Arcana Chapter 1 title art" class="CoAT1">
+            <p>Since our first year as a team we took on new members and are working on our main IPs second chapter. Whilst also trying to give back to they people who love playing our games. Everytime to start development we think of how we can make a game people can enjoy in many different ways.</p>
+            <p>After a successful first year together as a team we couldnt wait to get started on continuing our work, especially after the Falmouth University EXPO, where our studio and game recieved an hnourable mention from Fall guys creators, MediaTonic</p>
+        </div>
+    </section>
+
+    <!--Games-->
+    <section id="Games">
+        <div class="Title-Text">
+            <h2></h2>
+        </div>
+    </section>
+
+    <script>
+        var menuBtn = document.getElementById("menuBtn")
+        var sideNav = document.getElementById("sideNav")
+        var menu = document.getElementById("menu")
+
+        sideNav.style.right = "-250px";
+
+        menuBtn.onclick = function()
+        {
+            if(sideNav.style.right == "-250px")
+            {
+                sideNav.style.right = "0";
+                menu.src = "/Assets/close.png";
+            }
+            else
+            {
+                sideNav.style.right = "-250px";
+                menu.src = "/Assets/menu.png";
+            }
+        }
+    </script>
+
+    </body>
+</html>
