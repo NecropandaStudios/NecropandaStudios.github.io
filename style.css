@@ -19,8 +19,10 @@
 }
 
 .CoAT1{
-    width: 750px;
+    width: 350px;
     position: relative;
+    top: 4%;
+    align-self: center;
 }
 
 .banner-text{
@@ -129,7 +131,7 @@ nav ul li a{
     }
 }
 
-/*--About--*/
+/*-- About --*/
 #About{
     width: 100%;
     padding: 70px 0;
@@ -141,17 +143,19 @@ nav ul li a{
     padding-bottom: 70px;
 }
 
-.Title-Text p{
+.Title-Text h2{
     text-align: center;
     margin: 2%;
-    font-size: 20px;
-    color: #fff;
+    font-size: 35px;
+    font-style: italic;
+    font-weight: bold;
+    color: #5cffdf;
     position: relative;
     z-index: 1;
     display: inline-block;
 }
 
-.Title-Text p::after{
+.Title-Text h2::after{
     content: '';
     width: 50px;
     height: 35px;
@@ -172,14 +176,15 @@ nav ul li a{
     color: #fff;
 }
 
-.Title-Text h2{
-    font-size: 25px;
-    font-style: italic;
-    font-weight: bold;
-    color: #5cffdf;
+.Title-Text p{
+    font-size: 20px;
+    color: #fff;
+    margin-left: 10%;
+    margin-right: 10%;
+
 }
 
-/*--Games--*/
+/*-- Games --*/
 #Games{
     width: 100%;
     padding: 70px 0;
@@ -199,7 +204,7 @@ nav ul li a{
     text-align: center;
     border-radius: 7px;
     margin-bottom: 20px;
-    color: #000;
+    color: #fff;
     position: relative;
 }
 
@@ -223,4 +228,101 @@ nav ul li a{
 .Single-game:hover .overlay{
     opacity: 1;
     
+}
+
+.game-desc{
+    width: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: 1s;
+}
+
+hr{
+    background: #fff;
+    height: 2px;
+    border: 0;
+    margin: 15px auto;
+    width: 60%;
+}
+
+.game-desc p{
+    font-size: 14px;
+}
+
+.Single-game:hover .game-desc{
+    bottom: 40%;
+    opacity: 1;
+}
+
+@media screen and (max-width: 770px)
+{
+    .Single-game
+    {
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+    .game-desc p
+    {
+        font-size: 12px;
+    }
+    hr
+    {
+        margin: 5px auto;
+    }
+    .Single-game:hover .game-desc{
+        bottom: 25% !important;
+    }
+}
+
+/*-- Team --*/
+#Team{
+    width: 100%;
+    padding: 70px 0;
+    background-color: #272727;
+}
+
+.Team-row{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.Team-col{
+    flex-basis: 28%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px 3px #9c3dd3;
+    cursor: pointer;
+}
+
+.Team-col p{
+    font-size: 14px;
+}
+
+.Member{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.Member img{
+    width: 50px;
+    margin-right: 20px;
+    border-radius: 3px;
+}
+
+.Member-info{
+    
+}
+
+.Member-info img{
+    width: 25px;
+    height: 25px;
 }
