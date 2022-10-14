@@ -39,7 +39,7 @@
 .banner-text p{
     font-size: 20px;
     font-style: italic;
-    color: #5cffdf;
+    color: #15d4ee;
 }
 
 .banner-btn{
@@ -149,7 +149,7 @@ nav ul li a{
     font-size: 35px;
     font-style: italic;
     font-weight: bold;
-    color: #5cffdf;
+    color: #15d4ee;
     position: relative;
     z-index: 1;
     display: inline-block;
@@ -159,7 +159,7 @@ nav ul li a{
     content: '';
     width: 50px;
     height: 35px;
-    background: linear-gradient(#9c3dd3, #000);
+    background: linear-gradient(#15d4ee, #9c3dd3);
     position: absolute;
     top: -20px;
     left: 0;
@@ -300,6 +300,19 @@ hr{
     border-radius: 5px;
     box-shadow: 0 10px 20px 3px #9c3dd3;
     cursor: pointer;
+    color: #fff;
+}
+
+.Team-col:hover{
+    flex-basis: 28%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px 3px #15d4ee;
+    cursor: pointer;
+    color: #fff;
+    transform: scale(1.075);
+    transition: 0.2s ease-in;
 }
 
 .Team-col p{
@@ -313,16 +326,21 @@ hr{
 }
 
 .Member img{
-    width: 50px;
+    width: 75px;
     margin-right: 20px;
     border-radius: 3px;
 }
 
 .Member-info{
-    
+    text-decoration: none;
 }
 
 .Member-info img{
     width: 25px;
     height: 25px;
+    margin-right: -2px;
+}
+
+.Member-info h4{
+    font-size: 18px;
 }
