@@ -19,7 +19,7 @@
 }
 
 .CoAT1{
-    width: 350px;
+    width: 450px;
     position: relative;
     top: 4%;
     align-self: center;
@@ -129,6 +129,10 @@ nav ul li a{
         display: block;
         margin: 20px auto;
     }
+    .CoAT1
+    {
+        max-width: 80%;
+    }
 }
 
 /*-- About --*/
@@ -182,6 +186,11 @@ nav ul li a{
     margin-left: 10%;
     margin-right: 10%;
 
+}
+
+.Title-Text img{
+    background-size: cover;
+    background-position: center;
 }
 
 /*-- Games --*/
@@ -343,4 +352,68 @@ hr{
 
 .Member-info h4{
     font-size: 18px;
+}
+
+@media screen and (max-width: 770px)
+{
+   .Team-col
+   {
+        flex-basis: 100%;
+   } 
+   .Team-col:hover
+   {
+        flex-basis: 100%;
+   }
+}
+
+#Contact{
+    padding: 20px 0 20px;
+    background-color: #3d3d3d;
+    position: relative;
+}
+
+.contact-row{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-row h1{
+    margin: 10px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.contact-row img{
+    position: relative;
+    top: 4%;
+    align-self: center;
+}
+
+.contact-img{
+    max-width: 250px;
+    opacity: 0.1;
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%,-50%);
+}
+
+.contact-socials{
+    text-align: center;
+}
+
+.contact-socials p{
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 770px)
+{
+    .contact-img
+    {
+        max-width: 200px;
+    }
 }
