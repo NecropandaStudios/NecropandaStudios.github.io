@@ -4,7 +4,7 @@
     font-family: 'Alkalami', serif;
 }
 
-#banner{
+#Home{
     background: linear-gradient(rgba(0, 0, 0, 0.5), #9c3dd3), url("/Assets/MenuArt.png");
     background-size: cover;
     background-position: center;
