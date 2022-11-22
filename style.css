@@ -185,7 +185,13 @@ nav ul li a{
     color: #fff;
     margin-left: 10%;
     margin-right: 10%;
+}
 
+.Title-Text pre{
+    font-size: 20px;
+    color: #fff;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .Title-Text img{
@@ -257,6 +263,14 @@ hr{
     width: 60%;
 }
 
+hr{
+    background: #15d4ee;
+    height: 2px;
+    border: 0;
+    margin: 15px auto;
+    width: 60%;
+}
+
 .game-desc p{
     font-size: 14px;
 }
@@ -265,6 +279,7 @@ hr{
     bottom: 40%;
     opacity: 1;
 }
+
 
 @media screen and (max-width: 770px)
 {
@@ -436,3 +451,254 @@ hr{
         max-width: 200px;
     }
 }
+
+/*-- CoA Home __*/
+#CoAHome{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #9c3dd3), url("/Assets/MenuArt.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.logo{
+    width: 140px;
+    position: absolute;
+    top: 4%;
+    left: 5%
+}
+
+.CoAT1{
+    width: 450px;
+    position: relative;
+    top: 4%;
+    align-self: center;
+}
+
+.banner-text{
+    text-align: center;
+    color: #fff;
+    padding-top: 180px;
+}
+
+.banner-text h1{
+    font-size: 130px;
+    font-family: 'Berkshire Swash', cursive;
+}
+
+.banner-text p{
+    font-size: 20px;
+    font-style: italic;
+    color: #15d4ee;
+}
+
+.banner-btn{
+    margin: 70px auto 0 ;
+
+}
+
+.banner-btn a{
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: #fff;
+    border: .5px solid #fff;
+    position: relative;
+    z-index: 1;
+    transition: color 0.5s;
+}
+
+.banner-btn a span{
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #9c3dd3;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.banner-btn a:hover span{
+    width: 100%;
+}
+
+.banner-btn a:hover{
+    color: #5cffdf;
+}
+
+#sideNav{
+    width: 150px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    background: #272727;
+    z-index: 2;
+    transition: 0.5s;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 50px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#menuBtn{
+    width: 50px;
+    height: 50px;
+    background: #272727;
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+#menuBtn img{
+    width: 20px;
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 770px)
+{
+    .banner-text h1
+    {
+        font-size: 44px;
+    }
+    .banner-btn a
+    {
+        display: block;
+        margin: 20px auto;
+    }
+    .CoAT1
+    {
+        max-width: 80%;
+    }
+}
+
+/*-- CoA About --*/
+#CoAAbout{
+    width: 100%;
+    padding: 70px 0;
+    background-color: #272727;
+}
+
+.Title-Text{
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+.Title-Text h2{
+    text-align: center;
+    margin: 2%;
+    font-size: 35px;
+    font-style: italic;
+    font-weight: bold;
+    color: #15d4ee;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+
+.Title-Text h2::after{
+    content: '';
+    width: 50px;
+    height: 35px;
+    background: linear-gradient(#15d4ee, #9c3dd3);
+    position: absolute;
+    top: -20px;
+    left: 0;
+    z-index: -1;
+    transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+
+.Title-Text h1{
+    font-size: 50px;
+    font-style: italic;
+    font-weight: bold;
+    color: #fff;
+}
+
+.Title-Text p{
+    font-size: 20px;
+    color: #fff;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.Title-Text pre{
+    font-size: 20px;
+    color: #fff;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.Title-Text img{
+    background-size: cover;
+    background-position: center;
+}
+
+/*-- CoA Gallery --*/
+#CoAGallery{
+    box-sizing: border-box;
+}
+  
+  body {
+    margin: 0;
+    font-family: Arial;
+  }
+  
+  .header {
+    text-align: center;
+    padding: 32px;
+  }
+  
+  .row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
